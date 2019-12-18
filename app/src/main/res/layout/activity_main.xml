@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/feedback_logo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/feedback_logo" />
+
+    <EditText
+        android:id="@+id/feedbackBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:height="100dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/feedback_hint"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="@+id/feedback_logo"
+        app:layout_constraintStart_toStartOf="@+id/feedback_logo"
+        app:layout_constraintTop_toBottomOf="@+id/feedback_logo" />
+
+    <Button
+        android:id="@+id/liveCallBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/background_dark"
+        android:text="@string/feedback_callBtn"
+        android:textColor="@android:color/holo_orange_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/feedbacksendBtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/liveCallBtn"
+        app:layout_constraintEnd_toEndOf="@+id/feedbackBox"
+        app:layout_constraintStart_toStartOf="@+id/feedbackBox"
+        app:layout_constraintTop_toBottomOf="@+id/feedbackBox"
+        app:srcCompat="@drawable/feedback_send" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

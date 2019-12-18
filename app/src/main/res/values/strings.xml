@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FeedBack</string>
+    <string name="feedback_hint">Share Your ideas</string>
+    <string name="feedback_callBtn">Call Assassins</string>
+</resources>
